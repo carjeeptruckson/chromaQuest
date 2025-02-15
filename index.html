@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chroma Quest</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="icon.ico">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="rainbow-text">Chroma Quest</h1>
+        </header>
+
+        <main>
+            <section id="instructions-page" class="page">
+                <h2>Instructions</h2>
+                <p>Welcome to Chroma Quest! Your goal is to mix colors to match the target color as closely as possible.</p>
+                <h3>How to Play:</h3>
+                <ol>
+                    <li>A <strong>Target Color</strong> will be displayed.</li>
+                    <li>Choose colors from the palette below to mix. Click on a color button to add it to your mixture.</li>
+                    <li>Observe the <strong>Mixed Color</strong> and the <strong>Accuracy</strong> percentage.</li>
+                    <li>Use the <strong>Undo</strong> button to remove the last color added.</li>
+                    <li>Use the <strong>Reset</strong> button to clear your mixture and start over for the current level.</li>
+                    <li>Once you are satisfied with your mixture and the accuracy is high enough (85% or more), the <strong>Submit</strong> button will be enabled.</li>
+                    <li>Click <strong>Submit</strong> to advance to the next level with a new target color.</li>
+                    <li>Try to achieve perfect accuracy (100%)!</li>
+                </ol>
+                <button id="start-game-button">Start Game</button>
+            </section>
+
+            <section id="game-page" class="page hidden">
+                <div class="level-info">
+                    <div class="level-display">Level: <span id="level-number">1</span></div>
+                    <div class="accuracy-counters">
+                        <span id="over-95-counter">95%+ Matches: <span id="over-95-count">0</span></span>
+                        <span id="perfect-counter">100% Matches: <span id="perfect-count">0</span></span>
+                    </div>
+                </div>
+
+                <div class="color-displays">
+                    <div class="color-box" id="target-color-box">
+                        <div class="color-preview" id="target-preview"></div>
+                        <label>Target Color</label>
+                    </div>
+                    <div class="color-box" id="mixed-color-box">
+                        <div class="color-preview" id="mixed-preview"></div>
+                        <label>Mixed Color</label>
+                    </div>
+                </div>
+
+                <div class="accuracy-display">
+                    Accuracy: <span id="accuracy-percentage">0.00%</span>
+                    <span id="perfect-message" class="hidden">PERFECT!</span>
+                </div>
+
+                <div class="color-palette" id="color-palette">
+                    <!-- Color buttons will be generated here by JavaScript -->
+                </div>
+
+                <div class="controls">
+                    <button id="undo-button">Undo</button>
+                    <button id="reset-button">Reset</button>
+                    <button id="submit-button" disabled>Submit</button>
+                </div>
+                <input type="file" id="load-file-input" style="display: none" accept=".chromaquestsave">
+            </section>
+        </main>
+
+        <footer>
+            <button id="save-game-button" class="footer-button">Save Game</button>
+            <button id="load-game-button" class="footer-button">Load Game</button>
+            <p>© 2025, Rizzler inc.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
