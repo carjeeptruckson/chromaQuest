@@ -1,6 +1,6 @@
 # Chroma Quest
 
-[![Chroma Quest Screenshot](screenshot.png)]
+![Chroma Quest Screenshot](screenshot.png)
 
 Chroma Quest is a stylish and engaging HTML5 color mixing puzzle game. Your goal is to become a color master by accurately blending colors from a provided palette to match a target color. Level up, track your accuracy, and see how many perfect matches you can achieve!
 
