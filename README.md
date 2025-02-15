@@ -6,7 +6,7 @@ Chroma Quest is a stylish and engaging HTML5 color mixing puzzle game. Your goal
 
 ## Play it Live!
 
-[**Play Chroma Quest Online!**](https://your-live-demo-url.com) 
+[**Play Chroma Quest Online!**](https://carjeeptruckson.github.io/chromaQuest/) 
 
 ## Features
 
